@@ -20,11 +20,7 @@ export default {
   head() {
     return {
       title: this.page.title,
-      meta: [
-        {
-          content: this.page.keywords,
-        },
-      ],
+      meta: [{ name: "keywords", content: this.page.keywords }],
     };
   },
   data() {
